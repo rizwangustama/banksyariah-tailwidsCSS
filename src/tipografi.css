@@ -1,0 +1,17 @@
+@layer utilities {
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+        .heading-1 {
+            @apply text-5xl font-bold;
+        }
+        .heading-2 {
+            @apply text-[28px];
+        }
+        .heading-3 {
+            @apply text-lg font-bold;
+        }
+        .content-1 {
+            @apply text-base
+        }
+    }

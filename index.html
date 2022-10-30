@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- <script src="https://use.fontawesome.com/your-embed-code.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css"/>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/dist/output.css">
+    
+
+<style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-pagination{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        flex-direction: column;
+        right: 180px;
+        left: auto!important;
+        bottom: 200px!important;
+        gap: 12px;
+        width: fit-content!important;
+    }
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+        width: 18px;
+        height: 4px;
+        border-radius: 20px;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #FFB800!important;
+        height: 4px;
+        width: 10px!important;
+    }
+  </style> 
+   
+</head>
+<body>
+    <section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="relative swiper-slide h-screen">
+                <div class="overlay bg-black absolute z-0 h-screen w-full"></div>
+                <img class="absolute z-10" src="./assets/images/carousel-1.png" alt="">
+                <div class="container">
+                    <div class="relative z-20 slider-content text-left">
+                        <h1 class="heading-1 font-bold text-white leading-relaxed">Lörem ipsum tetral geor med desfili prehyra 
+                            Nelingar autodade</h1>
+                        <p class="text-white text-base font-normal max-w-[753px] mt-2.5 leading-[30px]">
+                            Lörem ipsum teligt vängen metrotos och psykodiktis k: då doheten. Prekaliga or. Aledes obånde och psykodiktis k: då doheten
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+    <!-- Section Choose -->
+    <div class="should-choose bg-background py-[120px]">
+        <div class="container">
+            <h1 class="heading-2 text-center font-bold text-dark">Why Should Choose Us?</h1>
+            <div class="grid grid-cols-4 gap-6 pt-10">
+                <!-- card 1 -->
+                <div class="card-choose bg-white rounded-3xl border">
+                    <div class="flex flex-col gap-6 pt-[55px] pb-9 px-[7px]">
+                        <img class="mx-auto" src="./assets/images/icon-1.svg" alt="">
+                        <div class="body text-center">
+                            <h1 class="heading-3 text-dark mb-3">Product Pembiayaan</h1>
+                            <p class="content-1 text-lightGray">Get your special discount by using our reservation</p>
+                        </div>
+                    </div>
+                    <a href="http://" class="text-base font-semibold bg-primary w-full flex text-center justify-center text-white py-6 rounded-t-xl rounded-b-3xl">View Details <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                </div>
+                <!-- End Card 1 -->
+                 <!-- card 1 -->
+                 <div class="card-choose bg-white rounded-3xl border">
+                    <div class="flex flex-col gap-6 pt-[55px] pb-9 px-[7px]">
+                        <img class="mx-auto" src="./assets/images/icon-1.svg" alt="">
+                        <div class="body text-center">
+                            <h1 class="heading-3 text-dark mb-3">Product Simpanan</h1>
+                            <p class="content-1 text-lightGray">Get your special discount by using our reservation</p>
+                        </div>
+                    </div>
+                    <a href="http://" class="text-base font-semibold bg-primary w-full flex text-center justify-center text-white py-6 rounded-t-xl rounded-b-3xl">View Details</a>
+                </div>
+                <!-- End Card 1 -->
+                 <!-- card 1 -->
+                 <div class="card-choose bg-white rounded-3xl border">
+                    <div class="flex flex-col gap-6 pt-[55px] pb-9 px-[7px]">
+                        <img class="mx-auto" src="./assets/images/icon-1.svg" alt="">
+                        <div class="body text-center">
+                            <h1 class="heading-3 text-dark mb-3">Product Deposito</h1>
+                            <p class="content-1 text-lightGray">Get your special discount by using our reservation</p>
+                        </div>
+                    </div>
+                    <a href="http://" class="text-base font-semibold bg-primary w-full flex text-center justify-center text-white py-6 rounded-t-xl rounded-b-3xl">View Details</a>
+                </div>
+                <!-- End Card 1 -->
+                 <!-- card 1 -->
+                 <div class="card-choose bg-white rounded-3xl border">
+                    <div class="flex flex-col gap-6 pt-[55px] pb-9 px-[7px]">
+                        <img class="mx-auto" src="./assets/images/icon-1.svg" alt="">
+                        <div class="body text-center">
+                            <h1 class="heading-3 text-dark mb-3">Berhadiah</h1>
+                            <p class="content-1 text-lightGray">Get your special discount by using our reservation</p>
+                        </div>
+                    </div>
+                    <a href="http://" class="text-base font-semibold bg-primary w-full flex text-center justify-center text-white py-6 rounded-t-xl rounded-b-3xl">View Details</a>
+                </div>
+                <!-- End Card 1 -->
+            </div>
+          
+        </div>
+    </div>
+    <!-- Section End Choose -->
+
+    <!-- About -->
+    <div class="about">
+        <div class="flex">
+            <div class="w-4/12">
+                <img class="h-full w-full object-cover" src="./assets//images/about.png" alt="">
+            </div>
+            <div class="w-8/12 bg-primary relative">
+                <img class="right-0 pt-8 absolute" src="./assets//images/rose-about.svg"  alt="">
+                <div class="container ml-0 pl-[120px] py-[120px] about-body">
+                    <h1 class="heading-2 font-medium text-white">About PT BPRS HIK MCI</h1>
+                    <p class="text-white mt-[28px] leading-relaxed">
+                        PT Bank Pembiayaan Rakyat Syariah Harta Insan Karimah Mitra Cahaya Indonesia atau dapat disingkat PT BPRS HIK MCI berkantor pusat di Jalan Kaliurang KM 10, No 28 Ngaglik Sleman D.I.Yogyakarta, mengawali perjalanan bisnisnya pada tanggal 11 Januari 2008 telah mengalami perjalanan berliku dan penuh tantangan. Pada tahun 2015 PT Induk Harta Insan Karimah Grup yang beranggotakan komunitas Alumni HMI FE UGM menambah permodalan Bank Syariah HIK MCI serta pergantian jajaran pengurus pada tahun 2016 menjadikan permulaan transformasi Bank Syariah HIK MCI. 
+                    </p>
+                    <a href="" class="text-white border flex w-fit mt-16 border-white rounded-xl py-4 px-7">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Most Popular News -->
+    <section class="most-popular-news py-[120px]">
+        <div class="container">
+            <h1 class="text-center heading-2 font-bold text-black">Most Popular News</h1>
+            <div class="swiper myNews mt-10">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide relative h-[380px] flex items-end rounded-3xl overflow-hidden">
+                        <img class="absolute" src="./assets/images/card-news.png" alt="">
+                        <div class="relative card-content bg-white w-full p-7 flex flex-col gap-3 rounded-3xl">
+                            <h1 class="text-left text-base font-bold">BPRS HIK MCI berbagi Hewan Qurban</h1>
+                            <p class="text-sm text-left text-[#656565]">Agustus, 17, 2022</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide relative h-[380px] flex items-end rounded-3xl overflow-hidden">
+                        <img class="absolute" src="./assets/images/card-news.png" alt="">
+                        <div class="relative card-content bg-white w-full p-7 flex flex-col gap-3 rounded-3xl">
+                            <h1 class="text-left text-base font-bold">BPRS HIK MCI berbagi Hewan Qurban</h1>
+                            <p class="text-sm text-left text-[#656565]">Agustus, 17, 2022</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide relative h-[380px] flex items-end rounded-3xl overflow-hidden">
+                        <img class="absolute" src="./assets/images/card-news.png" alt="">
+                        <div class="relative card-content bg-white w-full p-7 flex flex-col gap-3 rounded-3xl">
+                            <h1 class="text-left text-base font-bold">BPRS HIK MCI berbagi Hewan Qurban</h1>
+                            <p class="text-sm text-left text-[#656565]">Agustus, 17, 2022</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide relative h-[380px] flex items-end rounded-3xl overflow-hidden">
+                        <img class="absolute" src="./assets/images/card-news.png" alt="">
+                        <div class="relative card-content bg-white w-full p-7 flex flex-col gap-3 rounded-3xl">
+                            <h1 class="text-left text-base font-bold">BPRS HIK MCI berbagi Hewan Qurban</h1>
+                            <p class="text-sm text-left text-[#656565]">Agustus, 17, 2022</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide relative h-[380px] flex items-end rounded-3xl overflow-hidden">
+                        <img class="absolute" src="./assets/images/card-news.png" alt="">
+                        <div class="relative card-content bg-white w-full p-7 flex flex-col gap-3 rounded-3xl">
+                            <h1 class="text-left text-base font-bold">BPRS HIK MCI berbagi Hewan Qurban</h1>
+                            <p class="text-sm text-left text-[#656565]">Agustus, 17, 2022</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide relative h-[380px] flex items-end rounded-3xl overflow-hidden">
+                        <img class="absolute" src="./assets/images/card-news.png" alt="">
+                        <div class="relative card-content bg-white w-full p-7 flex flex-col gap-3 rounded-3xl">
+                            <h1 class="text-left text-base font-bold">BPRS HIK MCI berbagi Hewan Qurban</h1>
+                            <p class="text-sm text-left text-[#656565]">Agustus, 17, 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="text-center bg-primary mx-auto text-white text-base py-4 px-7 rounded-xl block w-fit mt-10">View Details All News</a>
+        </div>
+    </section>
+    <!-- End Most Popular News -->
+
+    <!-- Pengurus -->
+    <section class="pengurus bg-primary py-[224px] relative">
+        <div class="container">
+            <div class="w-4/12">
+                <h1 class="heading-2 font-bold text-white">Pengurus BPRS HIK MCI</h1>
+                <p class="text-base text-white">Mari Berkenalan dengan tokoh utama</p>
+
+                <a href="#" class="block w-fit mt-16 rounded-xl border border-white text-white px-7 py-4">View Details All</a>
+            </div>
+
+        </div>
+
+        <div class="swiper myPengurus absolute -translate-y-1/2 top-1/2 left-auto right-0">
+            <div class="swiper-wrapper bg-primary items-center">
+                <div class="swiper-slide relative h-[380px] flex items-end rounded-3xl overflow-hidden">
+                    <img class="absolute" src="./assets/images/card-news.png" alt="">
+                    <div class="relative card-content bg-white w-full p-7 flex flex-col gap-3 rounded-3xl">
+                        <h1 class="text-left text-base font-bold">BPRS HIK MCI berbagi Hewan Qurban</h1>
+                        <p class="text-sm text-left text-[#656565]">Agustus, 17, 2022</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide relative h-[380px] flex items-end rounded-3xl overflow-hidden">
+                    <img class="absolute" src="./assets/images/card-news.png" alt="">
+                    <div class="relative card-content bg-white w-full p-7 flex flex-col gap-3 rounded-3xl">
+                        <h1 class="text-left text-base font-bold">BPRS HIK MCI berbagi Hewan Qurban</h1>
+                        <p class="text-sm text-left text-[#656565]">Agustus, 17, 2022</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide relative h-[380px] flex items-end rounded-3xl overflow-hidden">
+                    <img class="absolute" src="./assets/images/card-news.png" alt="">
+                    <div class="relative card-content bg-white w-full p-7 flex flex-col gap-3 rounded-3xl">
+                        <h1 class="text-left text-base font-bold">BPRS HIK MCI berbagi Hewan Qurban</h1>
+                        <p class="text-sm text-left text-[#656565]">Agustus, 17, 2022</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide relative h-[380px] flex items-end rounded-3xl overflow-hidden">
+                    <img class="absolute" src="./assets/images/card-news.png" alt="">
+                    <div class="relative card-content bg-white w-full p-7 flex flex-col gap-3 rounded-3xl">
+                        <h1 class="text-left text-base font-bold">BPRS HIK MCI berbagi Hewan Qurban</h1>
+                        <p class="text-sm text-left text-[#656565]">Agustus, 17, 2022</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide relative h-[380px] flex items-end rounded-3xl overflow-hidden">
+                    <img class="absolute" src="./assets/images/card-news.png" alt="">
+                    <div class="relative card-content bg-white w-full p-7 flex flex-col gap-3 rounded-3xl">
+                        <h1 class="text-left text-base font-bold">BPRS HIK MCI berbagi Hewan Qurban</h1>
+                        <p class="text-sm text-left text-[#656565]">Agustus, 17, 2022</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide relative h-[380px] flex items-end rounded-3xl overflow-hidden">
+                    <img class="absolute" src="./assets/images/card-news.png" alt="">
+                    <div class="relative card-content bg-white w-full p-7 flex flex-col gap-3 rounded-3xl">
+                        <h1 class="text-left text-base font-bold">BPRS HIK MCI berbagi Hewan Qurban</h1>
+                        <p class="text-sm text-left text-[#656565]">Agustus, 17, 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Pengurus -->
+
+    <!-- Section Appreciation -->
+    <div class="appreciation bg-backround py-[120px]">
+        <div class="container">
+            <h1 class="heading-2 font-bold text-center">Appreciation </h1>
+            <div class="grid grid-cols-4 gap-6 mt-10">
+                <div class="app-card border bg-white rounded-3xl flex justify-center items-center h-[288px]">
+                    <img src="./assets/images/appreciation.png" alt="">
+                </div>
+                <div class="app-card border bg-white rounded-3xl flex justify-center items-center h-[288px]">
+                    <img src="./assets/images/appreciation.png" alt="">
+                </div>
+                <div class="app-card border bg-white rounded-3xl flex justify-center items-center h-[288px]">
+                    <img src="./assets/images/appreciation.png" alt="">
+                </div>
+                <div class="app-card border bg-white rounded-3xl flex justify-center items-center h-[288px]">
+                    <img src="./assets/images/appreciation.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Appreciation -->
+    <div class="feature-ojk bg-[#FFB800] py-10">
+        <div class="container">
+            <div class="grid grid-cols-2">
+                <div class="items justify-self-center flex flex-col gap-6">
+                    <h1 class="text-base text-Black">Terdaftar dan diawasi oleh :</h1>
+                    <img src="./assets/images/Otoritas Jasa Keuangan 1.png" alt="">
+                </div>
+                <div class="items justify-self-center flex flex-col gap-6">
+                    <h1 class="text-base text-Black">BPRS HIK MCIMerupakan <br>
+                        peserta penjaminan :</h1>
+                        <img src="./assets/images/Lembaga Penjamin Simpanan.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#061218] pt-[120px]">
+        <div class="container">
+            <div class="flex flex-col gap-[62px]">
+                <div class="wrapper">
+                    <img src="./assets/images/logo.png" alt="">
+
+                    <div class="flex mt-[30px]">
+                        <div class="items-footer w-6/12">
+                            <h1 class="text-lg text-secondary">Kantor Pusat PT BPRS HIK MCI</h1>
+                            <p class="text-white mt-6 max-w-[488px]">Jalan. Kaliurang KM. 10 No. 28, Gondangan, Sardonoharjo, Ngaglik, Kab. Sleman, DI Yogyakarta 55581</p>
+                        </div>
+                        <div class="items-footer w-3/12">
+                            <h1 class="text-lg text-secondary font-semibold">Produk Simpanan</h1>
+                            <ul  class="flex flex-col gap-3 mt-6">
+                                <li class="text-white"><a href="">Deposito Karimah</a></li>
+                                <li class="text-white"><a href="">Tabungan Karimah</a></li>
+                                <li class="text-white"><a href="">Tabungan Cerdas</a></li>
+                                <li class="text-white"><a href="">Tabungan Rencana</a></li>
+                                <li class="text-white"><a href="">Tabungan Ukhuwah</a></li>
+                            </ul>
+                        </div>
+                        <div class="items-footer w-3/12">
+                            <h1 class="text-lg text-secondary font-semibold">Produk Pembiayaan</h1>
+                            <ul class="flex flex-col gap-3 mt-6">
+                                <li class="text-white"><a href="">Pembiayaan Karyawan</a></li>
+                                <li class="text-white"><a href="">Pembiayaan UMKM</a></li>
+                                <li class="text-white"><a href="">Pembiayaan Multiguna</a></li>
+                                <li class="text-white"><a href="">Permbiayaan Sertifikasi Guru</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom py-10 border-t border-t-secondary">
+                    <p class="text-white text-center">copyright © 2022 PT BPRS MCI. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+
+        var swiper = new Swiper(".myNews", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+
+        var swiper = new Swiper(".myPengurus", {
+            slidesPerView: 5.5,
+            spaceBetween: 30,
+            freeMode: true,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-paginations",
+                clickable: true,
+            }
+        });
+      </script>
+</body>
+
+</html>

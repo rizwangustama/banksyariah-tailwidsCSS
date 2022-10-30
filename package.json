@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss --input src/input.css --output dist/output.css --watch",
+    "build": "npx tailwindcss --input src/input.css --output dist/output.css --minify"
+  }
+}
